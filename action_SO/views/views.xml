@@ -131,7 +131,7 @@
     
      <menuitem
             name="Running Orders"
-            id="menu_action_running orders"
+            id="menu_action_running_orders"
             action="action_running_orders"
             parent="sale.sale_order_menu"
             sequence="2"/>
