@@ -52,7 +52,7 @@
     
     
     
-        <record id="view_mrp_workorder_notes" model="ir.ui.view">
+<!--         <record id="view_mrp_workorder_notes" model="ir.ui.view">
         <field name="name">view.mrp.production.workorder.notes</field>
         <field name="model">mrp.workorder</field>
         <field name="inherit_id" ref="mrp.mrp_production_workorder_form_view_inherit"/>
@@ -61,7 +61,7 @@
               <field name="notes"/>
                 </xpath>
         </field>
-    </record>
+    </record> -->
     
     
 <record id="view_mrp_partial_production_mark_as_done" model="ir.ui.view">
