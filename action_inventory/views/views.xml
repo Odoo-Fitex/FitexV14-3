@@ -1,5 +1,5 @@
 <odoo>
-  <data>
+  <data> 
     
   <record id="view_stock_form_rollnumber" model="ir.ui.view">
         <field name="name">view.stock.form</field>
