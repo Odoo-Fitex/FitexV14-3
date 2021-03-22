@@ -20,8 +20,8 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr_payroll', 'ohrms_overtime'],
-
+    'depends': ['base', 'hr_payroll'],
+#, 'ohrms_overtime'
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
