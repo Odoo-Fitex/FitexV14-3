@@ -2,9 +2,9 @@
   <data>
   <record id="view_mrp_form_production_info_form" model="ir.ui.view">
         <field name="name">view.mrp_production.form</field>
-        <field name="model">mrp.production</field> 
+        <field name="model">mrp.production</field>
         <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
-        <field name="arch" type="xml">    
+        <field name="arch" type="xml">   
         	<xpath expr="//group[2]" position="before"> 
                   <group name="specifications" string="Specifications">
                           <field name="weight" string="M^2_Weight"/>
@@ -52,7 +52,7 @@
     
     
     
-<!--         <record id="view_mrp_workorder_notes" model="ir.ui.view">
+        <record id="view_mrp_workorder_notes" model="ir.ui.view">
         <field name="name">view.mrp.production.workorder.notes</field>
         <field name="model">mrp.workorder</field>
         <field name="inherit_id" ref="mrp.mrp_production_workorder_form_view_inherit"/>
@@ -61,7 +61,7 @@
               <field name="notes"/>
                 </xpath>
         </field>
-    </record> -->
+    </record>
     
     
 <record id="view_mrp_partial_production_mark_as_done" model="ir.ui.view">
@@ -97,7 +97,7 @@
         </field> 
     </record>
     
-<!--     <record id="view_mrp_edit_quantity" model="ir.ui.view">
+    <record id="view_mrp_edit_quantity" model="ir.ui.view">
         <field name="name">view.mrp_production.edit.quantity</field>
         <field name="model">mrp.workorder</field>
         <field name="inherit_id" ref="bi_partial_mrp.mrp_production_workorder_form_view_inherit_extended"/>
@@ -106,7 +106,7 @@
              <attribute name="readonly">0</attribute>
                 </xpath>
         </field>
-    </record> -->
+    </record>
     
      <record id="view_mrp_machine_nmbr_kanban" model="ir.ui.view">
         <field name="name">view.mrp_production.machine.nmbr.kanban</field>
@@ -133,7 +133,7 @@
         </field>
     </record>
     
-<!--        <record id="view_mrp_manufacturing_order_stitch_length" model="ir.ui.view">
+       <record id="view_mrp_manufacturing_order_stitch_length" model="ir.ui.view">
         <field name="name">view.mrp_production.stitch.length</field>
         <field name="model">stock.move</field>
         <field name="inherit_id" ref="mrp.view_stock_move_raw_tree"/>
@@ -144,7 +144,7 @@
                      <field name="MeterPerRev"/>
                 </xpath>
         </field>
-    </record> -->
+    </record>
     
       <record id="view_mrp_workcenter_needles" model="ir.ui.view">
         <field name="name">view.mrp.workcenter.needles.</field>
@@ -157,7 +157,7 @@
         </field>
     </record>
     
-<!--      <record id="view_mrp_manufacturing_order_form_stitch_length" model="ir.ui.view">
+     <record id="view_mrp_manufacturing_order_form_stitch_length" model="ir.ui.view">
         <field name="name">view.mrp_production.form.stitch.length</field>
         <field name="model">stock.move</field>
         <field name="inherit_id" ref="mrp.view_stock_move_lots"/>
@@ -167,25 +167,19 @@
 
                 </xpath>
         </field>
-    </record> -->
+    </record>
 
-<!--      <record id="view_mrp_manufacturing_order_fields" model="ir.ui.view">
+     <record id="view_mrp_manufacturing_order_fields" model="ir.ui.view">
         <field name="name">view.mrp_production.fields</field>
         <field name="model">mrp.production</field>
         <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
         <field name="arch" type="xml">
         	<xpath expr="//field[@name='routing_id']" position="after">
-                     <field name="fabric_type"/>
-
-                     <field name="slit_line"/>
-
+                     <field name="fabric_type" attrs="{'readonly': [('state' != 'draft')]}"/>
+                     <field name="slit_line" attrs="{'readonly': [('state' != 'draft')]}"/>
 
                 </xpath>
-  
         </field>
-
-    </record> -->
-<!--              attrs="{'readonly': [('state' != 'draft'),('state' != 'progress')]}" -->
-<!--              attrs="{'readonly': [('state' != 'draft'),('state' != 'progress')]}" -->
+    </record>
    </data>
 </odoo>

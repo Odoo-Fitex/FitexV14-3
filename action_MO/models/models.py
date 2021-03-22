@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
+  
  
- 
-class action_SO_line(models.Model):
+class action_SO_line(models.Model): 
     _inherit = 'mrp.production' 
  
     inch = fields.Char(string="Inch")
-    weight = fields.Char(string="m^2_Weight") 
+    weight = fields.Char(string="m^2_Weight")
     gouge = fields.Integer(string="Gouge")
     width = fields.Char(string="Width") 
     barcode = fields.Char(string='Barcode',
@@ -21,6 +21,7 @@ class action_SO_line(models.Model):
     total_qty_done = fields.Float(string="Quantity Partially Produced", compute="_compute_the_produced_quantity")
     actual_order_qty = fields.Float(string="Actual Quantity")
     notes = fields.Char(string="Notes")
+#     customer = fields.Many2one(string="Customer", related="origin.partner_invoice_id")
     
     def my_button_mark_as_done(self):
         self.ensure_one()
