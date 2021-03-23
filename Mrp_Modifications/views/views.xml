@@ -51,7 +51,7 @@
                 </field>
     </record>
                              <!--LOT SEARCH-->
-        <record id="lot_id_searching_WH" model="ir.ui.view">
+<!--         <record id="lot_id_searching_WH" model="ir.ui.view">
                 <field name="name">lot.search.WH</field>
                 <field name="model">mrp.bom</field>
                 <field name="inherit_id" ref="mrp.view_mrp_bom_filter"/>
@@ -60,7 +60,7 @@
                        <field name="routing_id" string="Routing"/>
                         </xpath>
                 </field>
-    </record>
+    </record> -->
 
    </data>
 </odoo>
