@@ -1,14 +1,15 @@
 <odoo>
   <data>
 
-<!--       <record id="mrp_bom_added_fields" model="ir.ui.view">
+       <record id="mrp_bom_added_fields" model="ir.ui.view">
         <field name="name">mrp.added.fields</field>
         <field name="model">mrp.bom</field>
         <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//group[2]" position="before">  
                    <group> 
-                   <field name="ratio" attrs="{'required':  [('material_type', '=', 'chemicals')], 'invisible': [('material_type','!=','chemicals')]}"  context="{'default_ratio': 1.0}"/>
+<!--  attrs="{'required':  [('material_type', '=', 'chemicals')], 'invisible': [('material_type','!=','chemicals')]}"  context="{'default_ratio': 1.0}" -->
+                   <field name="ratio"/>
                    <field name="material_type"/>
                    </group>
                 </xpath>
@@ -25,14 +26,14 @@
           
           <xpath expr="//field[@name='type']" position="after">
 
-                  <field name="grey_weight" attrs="{'required': [('material_type', '=', 'dyed')], 'invisible': [('material_type','!=','dyed')]}"/>
-                 <field name="grey_product_tmpl_id" attrs="{'required': [('material_type', '=', 'dyed')], 'invisible': [('material_type','!=','dyed')]}"/>
-                 <field name="barcode" attrs="{{'required': [('material_type', '=', 'dyed')], 'invisible': [('material_type','!=','dyed')]}"/>
+                  <field name="grey_weight"/>
+                 <field name="grey_product_tmpl_id"/>
+                 <field name="barcode"/>
 
                   </xpath>
 
         </field>
-    </record> -->
+    </record>
 
 
 
