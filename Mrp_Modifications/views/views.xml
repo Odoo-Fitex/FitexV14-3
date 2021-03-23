@@ -3,7 +3,7 @@
 
        <record id="mrp_bom_added_fields" model="ir.ui.view">
         <field name="name">mrp.added.fields</field>
-        <field name="model">mrp.bom</field>
+        <field name="model">mrp.bom</field> 
         <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//group[2]" position="before">  
