@@ -130,7 +130,7 @@
     </record>
   
      <record id="action_running_orders" model="ir.actions.act_window">
-            <field name="name"> Running Sales Orders</field>
+            <field name="name"> Running.Sales.Orders</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">sale.order</field>
             <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
@@ -140,7 +140,7 @@
         </record>
     
      <menuitem
-            name="Running Orders"
+            name="Running.Orders"
             id="menu_action_running_orders"
             action="action_running_orders"
             parent="sale.sale_order_menu"
