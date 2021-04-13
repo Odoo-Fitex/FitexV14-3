@@ -22,8 +22,8 @@
         	<xpath expr="//field[@name='name']" position="before">
              
                     <field name="operation_name"/>
+             <field name="company_id"/>
                     <field name="workcenter_id" string="Operation Workcenter"/>
-                    <field name="company_id"/>
                     <field name="time_cycle_manual" string="Operation Duration"/>
         </xpath>
         </field>
