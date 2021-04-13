@@ -21,8 +21,9 @@ class action_routing_operation_name(models.Model):
     operation_name = fields.Many2one(
         'router.operation', string="Operation")
     
-    company_id = fields.Many2one( string="Company",
-        compute='onchange_routing_operation_name')
+    company_id = fields.Many2one('res.company', string="Company"
+#         )
+#     compute='onchange_routing_operation_name'
 #     company_id2 = fields.Many2one(
 #         'res.company', 'Company',
 #         readonly=True, related='routing_id.company_id', store=True)
