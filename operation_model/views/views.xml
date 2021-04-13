@@ -39,9 +39,9 @@
                     <field name="company_id"/>
         </xpath>
           
-          <xpath expr="//tree[1]" position="attributes">
+<!--           <xpath expr="//tree[1]" position="attributes">
                 <attribute name="editable">bottom</attribute>
-        </xpath>
+        </xpath> -->
           
           
         </field>
