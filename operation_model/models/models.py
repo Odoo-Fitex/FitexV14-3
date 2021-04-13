@@ -23,9 +23,9 @@ class action_routing_operation_name(models.Model):
     
     company_id = fields.Many2one( string="Company",
         compute='onchange_routing_operation_name')
-    company_id2 = fields.Many2one(
-        'res.company', 'Company',
-        readonly=True, related='routing_id.company_id', store=True)
+#     company_id2 = fields.Many2one(
+#         'res.company', 'Company',
+#         readonly=True, related='routing_id.company_id', store=True)
     workcenter_id = fields.Many2one('mrp.workcenter', 'Work Center',
                                      readonly=True, related='operation_name.workcenter_id')
     time_cycle_manual = fields.Float(
