@@ -8,7 +8,7 @@ class action_SO(models.Model):
     delivery_distination = fields.Char(string="Dye House Address")
     number_of_out = fields.Integer(string="Delivery Paper Number")
     fabric_type = fields.Selection([('Yarn','Yarn'),
-                                    ('Grey','Grey'), 
+                                    ('Grey','Grey'),  
                                     ('Dyed','Dyed'),
                                     ('servivce','Service')], required=True, string="Sale's Order Type")
     done = fields.Boolean(string="Fully Delivered")
