@@ -27,7 +27,7 @@ class action_SO(models.Model):
      return self.write({'state': 'done'})
 
 class action_SO_line(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = 'sale.order.line' 
 
     inch = fields.Char(string="Inch")
     weight = fields.Char(string="M^2_Weight")
